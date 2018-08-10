@@ -1,0 +1,14 @@
+body {
+background-color:slateblue;
+}
+h1 {
+color: white;
+ text-align:center;
+ }
+ h1 {outline-style:solid;
+ }
+ p{
+ font-family: Times New Roman;
+ Font-size: 24px;
+ text-align:center;
+ }
