@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>homework css</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+{
+    box-sizing: border-box;
+}
+body {
+      font-family: Arial, Helvetica, sans-serif;
+	  }
+header {
+     background-color:lightblue;
+     padding:30px;
+     text-align:center;
+     font-size:36px;
+     color:white
+}
+section{
+     display: -webkit-flex;
+     display: flex;
+	 }
+nav {
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+    background: #ccc;
+     padding 20px;
+}
+nav ul{
+list-style-type: none;
+padding: 0;
+}
+Article{
+-webkit-flex: 3;
+-ms-flex: 3;
+flex: 3;
+background-color: blue;
+padding: 10px;
+}
+footer{
+background-color: #ee82ee;
+padding: 10px;
+text-align: center;
+color: white;
+}
+@media (max-width: 600px) {
+section{ -webkit-flex-direction: column;
+ }
+}
+</style>
+</head>
+<body>	
+<header>
+ <h2>it took me three hours</h2>
+ </header>
+ <section>
+ <nav>
+ <ul>
+ <li><a href="#">london</a></li>
+ <li><a href="#">paris</a></li>
+ <li><a href="#">tokyo</a></li>
+ </ul>
+ </nav>
+ <article>
+ <h1>london</h1>
+ <p>London is the capital city of England. It is the mos populous city in the United kigdom,with a matropolitan area of over 13 milllion inhabitants.<p>
+ <p> standing on the river Thames,London has been a major settlement for two millennia,its history going back to its founding by the romans, who named it londinium.</p>
+ </article>
+ </section>
+ <footer>
+ <p> fim da página</p>
+ </footer>
+ </body>
+ </html>
