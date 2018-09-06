@@ -3,6 +3,7 @@
 <head>
 <title>Formulário</title>
 <link rel="stylesheet" type="text/css" href="css/styleform.css">
+<script src="js/form.js"></script>
 </head>
 <body>
    <div id="form">
@@ -10,7 +11,11 @@
         nome:<br><input type="text" name="nome" value="" size="35"><br>
 		sexo:<br>
 		masculino<input type="radio" name="sexo" value="masculino"> feminino<input type="radio" name="sexo" value="feminino"><br>
-		Qual o ano do seu aniversário?<br>
+		Qual o ano do seu nascimento?<br>
+		<input type="button" id="btnCarregar" onclick="ano()" value="Carregar combobox" />
+		<select name="data_nasc" id="data_nasc">
+		</select><br>
+		Qual a data do seu aniversário?<br>
 		<input type="date" name="data_aniversario"><br>
 		Assinale os itens de maior consumo:<br>
 		<input type="checkbox" name="chocolate" value="chocolate">Chocolate<br>
