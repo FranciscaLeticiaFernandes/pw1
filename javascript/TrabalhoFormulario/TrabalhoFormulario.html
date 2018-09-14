@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="form.css">
+   <script src="validacao.js" ></script>
+</head>
+<body>
+  <form>
+      <div>
+          <h3>Formulário de Solicitação de informação (Pessoa Fisica)</h3>
+          <p>as informações abaixo são obrigatórias</p>
+	     <b>Nome:</b>
+		 <input type="text" name="nome" value size="35">
+		 <b>CPF:</b>
+		 <input type="number" name="numero" value size="35" min="0" max="9"><br>
+		 Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se a opção for por RG, indicar órgão emissor e UF):<br>
+        <b>tipo do documento</b> 
+		<input type="text" name"documento" value size="35">
+		<b>N°:</b>
+		<input type="number" name="numero" value size="35"><br>
+		<b>Endereço eleltrônico(E-mail):</b>
+		<input type="email" name="mail" value size="35"><br>
+		ou
+		<b>Endereço físico (Rua,n°,complemento,Bairro):</b>
+		<input type="text" name="endereco" value size="35"><br>
+		<b>Cidade:</b>
+		<input type="text" name="cidade" value size="35">
+		<b>Estado</b> 
+		<input type="text" name="estado" value size="35">
+		<b>UF:</b>
+		<input type="text" name="uf" value size="35"><br>
+		<b>CEP:</b>
+		<input type="number" name="cep" value size="35">
+        <b>País:</b>
+		<input type="text" name="pais" value size="35">
+	 </div>
+	 <div>
+	 <p>os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços</p>
+	 
+	 <b>Sexo:</b><br>
+	 Masculino
+     <input type="radio" name="sexo" value="Masculino">  
+	   Feminino
+	 <input type="radio" name="sexo" value="feminino">   
+	   <b>Data de nascimento:</b>
+	   <input type="date" name="datanasc"><br>
+	 <b>Escolaridade</b><br>
+	 Sem instrução formal
+	 <input type="radio" name="escolaridade" value="instrução formal">
+	 Ensino Fundamental
+	 <input type="radio" name="escolaridade" value="ef">
+	 Ensino Médio
+	 <input type="radio" name="escolaridade" value="em">
+	 Ensino Superior
+	 <input type="radio" name="escolaridade" value="es">
+	 Especialização
+	 <input type="radio" name="escolaridade" value="esp">
+	 Mestrado
+	 <input type="radio" name="escolaridade" value="mes">
+	 Doutorado
+	 <input type="radio" name="escolaridade" value="dt"><br>
+	 ocupação principal/profissão<br>
+	 Empregado - setor privado
+	 <input type="radio" name="ocupação" value="empregado">
+	 Jornalista
+	 <input type="radio" name="ocupação" value="jornalista">
+	 Membro de partido político
+	 <input type="radio" name="ocupação" value="patido">
+	 Representante de sindicato
+	 <input type="radio" name="ocupação" value="sindicato">
+	 Profis.Liberal/autônomo
+	 <input type="radio" name="ocupação" value="autonomo"><br>
+	 Pesquisador
+	 <input type="radio" name="ocupação" value="pesquisador">
+	 Professor
+	 <input type="radio" name="ocupação" value="professor">
+	 Estudante
+	 <input type="radio" name="ocupação" value="estudante">
+	 Empresário/empreendedor
+	 <input type="radio" name="ocupação" value="empresario">
+	 Servidor público federal
+	 <input type="radio" name="ocupação" value="servidor"><br>
+	 Servidor público estadual
+	 <input type="radio" name="ocupação" value="serestado">
+	 Servidor público municipal
+	 <input type="radio" name="ocupação" value="sermuni">
+	 Membro de ONG nacional
+	 <input type="radio" name="ocupação" value="menbroong">
+	 Membro de ONG internacional
+	 <input type="radio" name="ocupação" value="menbroonginter">
+	 outras
+	 <input type="radio" name="ocupação" value="outro"><br>
+	 telefone: (  )
+         <input type="number" name="tel" value size="35">	 
+	 </div>
+	  <div>
+	 <p>Especificação do pedido de acesso à informação </p>
+	
+	 <b>Órgão/Entidade destinatário do pedido:</b><br>
+	 <input type="text" name="destinatario" value size="35"><br>
+	 <b>Forma preferencial do recebimento de resposta</b><br>
+	 Buscar/Consultar pessoalmente  
+     <input type="radio" name="recebimento" value="buscar">
+	 E-mail 
+	 <input type="radio" name="recebimento" value="email">
+	 Por carta(com custo)
+	 <input type="radio" name="recebimento" value="carta"><br>
+	 <b>especificaçao do pedido:</b><br>
+	 <textarea rows="10" cols="90"></textarea>
+     <input type="submit" value="Enviar" >
+	 
+	 
+	 </div>
+  </form>
+</body>
+</html>

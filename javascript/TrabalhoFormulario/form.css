@@ -1,0 +1,24 @@
+ h3{
+	 
+	font-family: arial;
+	font-weight: bold;
+}
+p {
+	border-style: groove;
+	border-color: lightblue;
+	background-color: lightblue;
+}
+ div{
+	 margin : auto;
+	 width: 50%;
+	 border: 80px:
+	 
+}
+form{
+	border-style: solid;
+	width: auto
+	margin: 80px;
+}
+body{
+	border-style: solid;
+}
