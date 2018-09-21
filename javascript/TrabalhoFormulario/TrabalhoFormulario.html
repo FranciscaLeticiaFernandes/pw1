@@ -5,19 +5,19 @@
    <script src="validacao.js" ></script>
 </head>
 <body>
-  <form>
+  <form name="forma1" action="">
       <div>
           <h3>Formulário de Solicitação de informação (Pessoa Fisica)</h3>
           <p>as informações abaixo são obrigatórias</p>
 	     <b>Nome:</b>
 		 <input type="text" name="nome" value size="35">
 		 <b>CPF:</b>
-		 <input type="number" name="numero" value size="35" min="0" max="9"><br>
+		 <input type="number" name="cpf" value="" size="35" min="0" max="9" maxlength="11" ><br>
 		 Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se a opção for por RG, indicar órgão emissor e UF):<br>
         <b>tipo do documento</b> 
 		<input type="text" name"documento" value size="35">
 		<b>N°:</b>
-		<input type="number" name="numero" value size="35"><br>
+		<input type="number" name="numero" value size="35" maxlength="15"><br>
 		<b>Endereço eleltrônico(E-mail):</b>
 		<input type="email" name="mail" value size="35"><br>
 		ou
@@ -28,9 +28,9 @@
 		<b>Estado</b> 
 		<input type="text" name="estado" value size="35">
 		<b>UF:</b>
-		<input type="text" name="uf" value size="35"><br>
+		<input type="text" name="uf" maxlength="2" size="35"><br>
 		<b>CEP:</b>
-		<input type="number" name="cep" value size="35">
+		<input type="number" name="cep" maxlength= min="0" max="9" value size="35">
         <b>País:</b>
 		<input type="text" name="pais" value size="35">
 	 </div>
@@ -106,8 +106,8 @@
 	 Por carta(com custo)
 	 <input type="radio" name="recebimento" value="carta"><br>
 	 <b>especificaçao do pedido:</b><br>
-	 <textarea rows="10" cols="90"></textarea>
-     <input type="submit" value="Enviar" >
+	 <textarea rows="10" cols="90"></textarea></br>
+	 <button type = "button" onclick="validarformulario(),validarcpf(),validaremail(),validarendereco(),validarcidade(),validarestado(),validaruf(),validarcep(),validarpais()">Enviar</button>
 	 
 	 
 	 </div>
